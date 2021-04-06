@@ -14,5 +14,12 @@ while str != "0":
         str = input()
 
 f1.close()
+l = [1,1]
+for j in range(0,10):
+    l.append(l[j]+l[j+1])
 
-#f2 = open("csvtest.txt", "w")
+with open("csvtest.txt", "w") as csvfile:
+    wr = csv.writer(csvfile, delimiter = ',')
+
+    for i in range(0,10):
+        wr.writerow(l[i:i+3])
