@@ -18,7 +18,7 @@ def Partition(data, lo, hi):
 
 def QuickSort(data, lo=0, hi=(len(data)-1)):
     print(data[hi])
-    if data[lo] < data[hi]:
+    if lo < hi:
         pivot = Partition(data, lo, hi)
         QuickSort(data, lo, pivot - 1)
         QuickSort(data, pivot + 1, hi)
