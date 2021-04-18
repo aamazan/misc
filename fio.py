@@ -1,5 +1,6 @@
 # Description: program to relearn file i/o
 import csv
+import qs.py as qs
 
 name = input("Please enter a name for your .txt: \n")
 name += ".txt"

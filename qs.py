@@ -1,7 +1,5 @@
 #Python implementation of QuickSort
 
-data = [8,6,7,5,3,0,9]
-
 def Partition(data, lo, hi):
     pivot = data[hi]
     temp = lo - 1
@@ -17,11 +15,9 @@ def Partition(data, lo, hi):
     return temp + 1
 
 def QuickSort(data, lo=0, hi=(len(data)-1)):
-    print(data[hi])
     if lo < hi:
         pivot = Partition(data, lo, hi)
         QuickSort(data, lo, pivot - 1)
         QuickSort(data, pivot + 1, hi)
     return data
 
-print(QuickSort(data))
