@@ -5,16 +5,16 @@ import qs.py as qs
 name = input("Please enter a name for your .txt: \n")
 name += ".txt"
 f1 = open(name,"w")
-str = input("Please enter text for the test document. Type 0 and hit enter to quit. \n")
 
-while str != "0":
-    if str == "0":
-        break
-    else:
-        f1.write(str + "\n")
-        str = input()
 
-f1.close()
+#while str != "0":
+#    if str == "0":
+#        break
+#    else:
+#        f1.write(str + "\n")
+#        str = input()
+
+#f1.close()
 l = [1,1]
 for j in range(0,10):
     l.append(l[j]+l[j+1])
