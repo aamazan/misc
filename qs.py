@@ -1,4 +1,4 @@
-#Python implementation of QuickSort
+#Python implementation of Quicksort
 
 def Partition(data, lo, hi):
     pivot = data[hi]
@@ -20,4 +20,3 @@ def QuickSort(data, lo, hi):
         QuickSort(data, lo, pivot - 1)
         QuickSort(data, pivot + 1, hi)
     return data
-
